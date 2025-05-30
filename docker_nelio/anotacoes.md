@@ -1,5 +1,12 @@
 # Docker
 
+## Introdução
+Virtualização é uma tecnologia que permite criar ambientes virtuais e simulados a partir de uma única máquina física, como um servidor ou computador. por exemplo: Virtualbox
+
+Os containers compartilham recursos do kernel da máquina hospedeira, mas cada um está alocado em um namespaces próprio
+
+Docker é uma plataforma.
+
 Versão do Docker
 ```
 docker -v
