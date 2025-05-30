@@ -23,16 +23,29 @@ docker version
   - Uma imagem é composta por camadas
   - Uma imagem tipicamente é definida a partir de outra imagem existente
   - Uma imagem "inicial" é definida a partir de "scratch"
+  - Uma imagem é como um modelo ou receita para criar containers. Ela é somente leitura e serve como base para gerar containers, que são instâncias em execução dessa imagem.
+  - Modelo pronto com tudo que o app precisa. É somente leitura.
 
 #### Container
   - Conceito: é uma instância de uma imagem
   - Pode estar em execução ou parado
   - Container é STATEFUL: mantém estado. Ele possui uma camada superior de escrita.
+  - Um container no Docker é uma instância em execução de uma imagem.
+  - Um container é um ambiente leve e isolado que executa um aplicativo com base em uma imagem Docker.
+  - Ele contém tudo que o app precisa, mas não carrega um sistema operacional completo como uma VM.
+
 
 #### Registry
   - É um serviço que armazena imagens
   - Registry padrão para Docker: Docker Hub
   - Para instanciar um container, a imagem precisa existir localmente ou em um Registry
+  - Um registry (registro) é um repositório central onde as imagens Docker são armazenadas, organizadas e distribuídas. Ele funciona como o GitHub das imagens Docker.
+  - Registry é onde as imagens Docker são publicadas, versionadas e compartilhadas, seja com o mundo ou com um time específico.
+
+  ##### Resumo
+  - Uma imagem seria tipo uma class em java, um tipo
+  - Um container seria tipo a instancia, o objeto dessa classe.
+  - Um registry seria tipo um github. Um local para registrar as imagens docker
 
 ## Comandos ps, images, pull e run, stop, start
 
